@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-       <title>Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
     <style>
         body {
             background-color: #1e1e2f;
@@ -51,7 +53,6 @@
             background-color: #575757;
             color: #f7c08a;
             border-radius: 5px;
-            text-decoration: none;
         }
 
         .section {
@@ -90,7 +91,7 @@
             list-style-type: none;
             padding: 0;
         }
-     
+
         ul li {
             margin-bottom: 10px;
         }
@@ -131,6 +132,36 @@
             justify-content: center;
             align-items: flex-start;
         }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background-color: #1e1e2f;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .skill-box h3 {
+            margin-top: 0;
+            color: #f7c08a;
+        }
+
+        .skill-box p {
+            margin: 0;
+            color: #f0f0f5;
+        }
     </style>
 </head>
 
@@ -161,7 +192,7 @@
         <div class="section about" id="about">
             <h1>About Myself</h1>
             <div class="photo">
-                <img src="C:\Users\91934\Pictures\Saved Pictures\Akash.jpg" alt=" photo">
+                <img src="path_to_your_image.jpg" alt="Akash's photo">
             </div>
             <div class="content">
                 <p>I am Akash G, a dedicated and innovative web developer with a keen interest in creating dynamic and
@@ -202,13 +233,28 @@
 
         <div class="section skills" id="skills">
             <h1>Skills</h1>
-            <ul>
-                <li>Frontend Development: HTML, CSS, JavaScript, React.</li>
-                <li>Backend Development: Node.js, Express.js.</li>
-                <li>Database: MongoDB, SQL.</li>
-                <li>Programming Languages: C++, JavaScript.</li>
-                <li>Other Tools: Git, GitHub, Docker, Webpack.</li>
-            </ul>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express.js</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Database</h3>
+                    <p>MongoDB, SQL</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Programming Languages</h3>
+                    <p>C++, JavaScript</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Other Tools</h3>
+                    <p>Git, GitHub, Docker, Webpack</p>
+                </div>
+            </div>
         </div>
 
         <div class="section projects" id="projects">
@@ -237,19 +283,18 @@
         <div class="section contact" id="contact">
             <h1>Contact</h1>
             <ul>
-                <li>Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwChgKXszDgzPXjdRCSCGwWmptBHJhBjZWbcfdDbPZJbZqKdNXmXhrXKTPDSGBNCkBLttC"> akashoffi04@gmail.com</a></li>
+                <li>Email: <a href="mailto:akashoffi04@gmail.com">akashoffi04@gmail.com</a></li>
                 <li>Phone: 9345103739</li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/akash-g-311913258/">LinkedIn Profile</a></li>
-                <li>Location: Thirukoilur, Villupuram District.Tamil Nadu</li>
+                <li>Location: Thirukoilur, Villupuram District, Tamil Nadu</li>
             </ul>
 
             <div class="social-media">
-                
-
-                <h3>Social Media</h3>
+                <h3>Follow me on social media</h3>
                 <ul>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/akash-g-311913258/">LinkedIn Profile</a></li>
-                    <li>GitHub: <a href="https://github.com/AKASH04G/akash1">GitHub Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/akash-g-311913258/">LinkedIn</a></li>
+                    <li><a href="https://github.com/yourusername">GitHub</a></li>
+                    <li><a href="https://twitter.com/yourusername">Twitter</a></li>
                 </ul>
             </div>
         </div>
